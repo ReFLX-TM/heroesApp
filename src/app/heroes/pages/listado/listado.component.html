@@ -1,0 +1,11 @@
+<h1>Listado de Campeones</h1>
+<mat-divider></mat-divider>
+
+<br>
+
+<mat-card *ngFor="let heroe of heroes">
+  <mat-card-header>
+    <mat-card-title> {{ heroe.name }} </mat-card-title>
+    <mat-card-subtitle> {{ heroe.title | titlecase }} </mat-card-subtitle>
+  </mat-card-header>
+</mat-card>
